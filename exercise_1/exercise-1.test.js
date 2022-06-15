@@ -8,6 +8,7 @@ describe('exercise 1', () => {
     const { rows } = await pool.query(
       fs.readFileSync(`${__dirname}/exercise-1.sql`, 'utf-8')
     );
+    console.log(rows);
     expect(rows).toEqual([{ address_id: 146 }]);
   });
 });
