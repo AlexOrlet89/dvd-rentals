@@ -8,7 +8,6 @@ describe('exercise 2', () => {
     const { rows } = await pool.query(
       fs.readFileSync(`${__dirname}/exercise-2.sql`, 'utf-8')
     );
-    console.log(rows);
     expect(rows.length).toEqual(27);
   });
 });
